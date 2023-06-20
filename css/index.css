@@ -166,6 +166,10 @@ body {
     padding: 70px 0px;
 }
 
+.quote-body>a {
+    text-decoration: none;
+}
+
 .quote-body>.quote-container {
     display: flex;
     justify-content: center;
