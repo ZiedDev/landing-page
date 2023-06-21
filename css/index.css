@@ -1,20 +1,35 @@
 @font-face {
     font-family: "Roboto";
-    src: url(../Fonts/Roboto-Regular.ttf);
+    src: url(../Fonts/roboto/Roboto-Regular.ttf);
 }
 
 @font-face {
     font-family: "Roboto Bold";
-    src: url(../Fonts/Roboto-Black.ttf);
+    src: url(../Fonts/roboto/Roboto-Black.ttf);
 }
 
 @font-face {
     font-family: "Roboto Light Italic";
-    src: url(../Fonts/Roboto-LightItalic.ttf);
+    src: url(../Fonts/roboto/Roboto-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: "Work-Sans";
+    src: url(../Fonts/work-sans/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Work-Sans Bold";
+    src: url(../Fonts/work-Sans/WorkSans-Black.ttf);
+}
+
+@font-face {
+    font-family: "Work-Sans Light Italic";
+    src: url(../Fonts/work-Sans/WorkSans-LightItalic.ttf);
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Work-Sans","Roboto", sans-serif;
     margin: 0;
 }
 
@@ -39,7 +54,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Roboto Bold", sans-serif;
+    font-family: "Work-Sans Bold","Roboto Bold", sans-serif;
 }
 
 .hero>.header-logo {
@@ -49,8 +64,12 @@ a {
     justify-content: left;
     align-items: center;
     margin-right: auto;
-/*    font-family: "Roboto Bold", sans-serif;
+/*    font-family: "Work-Sans Bold", "Roboto Bold", sans-serif;
     font-size: 24px;*/
+}
+
+.hero>.header-logo:hover {
+    cursor: pointer;
 }
 
 .hero>.header-links {
@@ -70,7 +89,7 @@ a {
     text-align: center;
     margin-left: auto;
     padding: 10px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Work-Sans", "Roboto", sans-serif;
     font-size: 18px;
 }
 
@@ -90,7 +109,7 @@ a {
 
 .hero-text>.hero-main-text {
     font-size: 48px;
-    font-family: "Roboto Bold", sans-serif;
+    font-family: "Work-Sans Bold", "Roboto Bold", sans-serif;
     color: #F9FAF8;
     word-wrap: break-word;
 }
@@ -108,6 +127,8 @@ a {
     justify-content: center;
     min-width: 250px;
     border-radius: 15px;
+    align-self: flex-start;
+    padding-bottom: 10px;
 }
 
 .secondary-body {
@@ -117,9 +138,10 @@ a {
 
 .secondary-body>.information-header {
     font-size: 36px;
-    font-family: "Roboto Bold", sans-serif;
+    font-family: "Work-Sans Bold", "Roboto Bold", sans-serif;
     color: #1F2937;
     text-align: center;
+    word-wrap: none;
     padding: 50px;
 }
 
@@ -145,17 +167,18 @@ a {
     max-width: 250px;
     border-radius: 20px;
     margin: 10px;
-
 }
 
 .info-card-1>.info-card-img-1,
 .info-card-2>.info-card-img-2,
 .info-card-3>.info-card-img-3 {
     flex: 0;
-    width: 100%;
-    height: 100%;
     border-radius: 15px;
     border: 5px Solid #3882F6;
+    width: 250px;
+    min-width: 200px;
+    border-radius: 15px;
+    align-self: flex-start;
 }
 
 .info-card-1>.info-card-subtitle-1,
@@ -183,7 +206,7 @@ a {
 .quote-container>.quote {
     flex: 1;
     color: #1F2937;
-    font-family: "Roboto Light Italic", sans-serif;
+    font-family: "Work-Sans Light Italic", "Roboto Light Italic", sans-serif;
     font-size: 36px;
     text-align: center;
     padding: 20px 0px;
@@ -192,7 +215,7 @@ a {
 .quote-container>.quote-author {
     flex: 1;
     color: #1F2937;
-    font-family: "Roboto Bold", sans-serif;
+    font-family: "Work-Sans Bold", "Roboto Bold", sans-serif;
     font-size: 24px;
     text-align: right;
     padding: 20px 0px;
@@ -211,6 +234,7 @@ a {
 }
 
 .reach-out-card-container>.reach-out-card {
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -230,11 +254,11 @@ a {
 .reach-out-card-text>.reach-out-card-text-1,
 .reach-out-card-text>.reach-out-card-text-2 {
     flex: 1;
-
+    padding-bottom: 5px; 
 }
 
 .reach-out-card-text>.reach-out-card-text-1 {
-    font-family: "Roboto Bold", sans-serif;
+    font-family: "Work-Sans Bold", "Roboto Bold", sans-serif;
     font-size: 24px;
     color: #E5E7EB;
     min-width: 260px;
@@ -271,7 +295,7 @@ a {
     margin: 0;
     background-color: #1F2937;
     color: #E5E7EB;
-    padding: 50px;
+    padding: 20px 0px 15px 0px;
 }
 
 .footer>.footer-container {
@@ -279,11 +303,12 @@ a {
     flex: auto;
     justify-content: center;
     align-items: center;
-    font-family: "Roboto Light Italic", sans-serif;
+    font-family: "Work-Sans Light Italic", "Roboto Light Italic", sans-serif;
 }
 
 .footer-container>.footer-text {
     flex: 1;
     text-align: center;
     font-size: 18px;
+    line-height: 200%;
 }
