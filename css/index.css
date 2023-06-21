@@ -27,6 +27,7 @@ body {
     margin: 0;
     background-color: #1F2937;
     color: #E5E7EB;
+    padding-top: 20px;
 }
 
 a {
@@ -42,7 +43,7 @@ a {
 }
 
 .hero>.header-logo {
-    padding-top: 15px;
+    padding-left: 5%;
     flex: 4 1 auto;
     display: flex;
     justify-content: left;
@@ -144,7 +145,7 @@ a {
     max-width: 250px;
     border-radius: 20px;
     margin: 10px;
-    
+
 }
 
 .info-card-1>.info-card-img-1,

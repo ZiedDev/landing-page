@@ -15,23 +15,24 @@
                 <img src="./images/Logo.png" width="70px">
             </div>
             <div class="header-links">
-                
-                    <div class="header-link-one">
-                        <a href="#">
-                            Home
-                        </a>
-                    </div>
+
+                <div class="header-link-one">
+                    <a href="#">
+                        Home
+                    </a>
+                </div>
 
                 <div class="header-link-two">
                     <a href="#secondary-body">
                         About
                     </a>
                 </div>
-                
+
                 <div class="header-link-three">
                     <a href="#third-body">
                         Contact
-                    </a></div>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -50,8 +51,7 @@
         </div>
     </div>
 
-    <div class="secondary-body page-center">
-        <a id="secondary-body"></a>
+    <section class="secondary-body page-center">
         <div class="information-header page-center"><span id="#information-header">Some Random information.</span></div>
 
         <div class="info-cards">
@@ -82,7 +82,7 @@
             </div>
         </div>
 
-    </div>
+    </section>
 
     <div class="quote-body">
         <a href="https://youtu.be/ZXsQAXx_ao0">
@@ -94,8 +94,7 @@
         </a>
     </div>
 
-    <div class="third-body">
-        <a id="third-body"></a>
+    <section class="third-body">
         <div class="reach-out-card-container">
             <div class="reach-out-card">
                 <div class="reach-out-card-text">
@@ -109,16 +108,27 @@
                     </div>
                 </a>
             </div>
-        </div>
+    </section>
     </div>
 
     <div class="footer">
         <div class="footer-container page-center">
             <div class="footer-text">
-                Copyright © <a href="https://github.com/ZiedDev/">Zied</a>
+                Made by - <a href="https://github.com/ZiedDev/">Zied</a>
             </div>
         </div>
     </div>
+
+    <script>
+        document.querySelectorA11('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute("href")).scrollIntoView({
+                    behavior: "smooth"
+                });
+            })
+        });
+    </script>
 </body>
 
 </html>
