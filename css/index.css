@@ -49,9 +49,29 @@ body {
     padding-top: 20px;
 }
 
-a {
+.link-enhancer>a {
     text-decoration: none;
-    color: #8fa7d7;
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.link-enhancer>a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.link-enhancer>a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .hero {
@@ -90,11 +110,12 @@ a {
 .header-links>.header-link-two,
 .header-links>.header-link-three {
     flex: 1 1 auto;
-    text-align: center;
     margin-left: auto;
     padding: 10px;
     font-family: "Work-Sans", "Roboto", sans-serif;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
 }
 
 .main-body {
@@ -133,6 +154,7 @@ a {
     min-width: 250px;
     border-radius: 15px;
     align-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
 }
 
 .secondary-body {
@@ -171,6 +193,8 @@ a {
     max-width: 250px;
     border-radius: 20px;
     margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
+    text-align: center;
 }
 
 .info-card-1>.info-card-img-1,
@@ -179,8 +203,8 @@ a {
     flex: 0;
     border-radius: 15px;
     border: 5px Solid #3882F6;
-    width: 250px;
-    min-width: 200px;
+    width: 200px;
+    min-width: 240px;
     border-radius: 15px;
     align-self: flex-start;
 }
@@ -247,6 +271,7 @@ a {
     border-radius: 10px;
     padding: 20px 30px;
     gap: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
 }
 
 .reach-out-card>.reach-out-card-text {
