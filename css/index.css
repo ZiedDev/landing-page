@@ -89,7 +89,7 @@ a {
 .header-links>.header-link-one,
 .header-links>.header-link-two,
 .header-links>.header-link-three {
-    flex: 1 1 100px;
+    flex: 1 1 auto;
     text-align: center;
     margin-left: auto;
     padding: 10px;
@@ -109,6 +109,7 @@ a {
 
 .hero-text {
     flex: 1;
+    padding-top: 15px;
 }
 
 .hero-text>.hero-main-text {
@@ -125,13 +126,13 @@ a {
 
 .main-body-image {
     flex: 1;
-    /*width: 300px;*/
+    width: 300px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     min-width: 250px;
     border-radius: 15px;
-    align-self: flex-start;
+    align-self: center;
 }
 
 .secondary-body {
