@@ -5,4 +5,4 @@ https://www.theodinproject.com/lessons/foundations-landing-page
 
 Actually this might be my actual website in the future so stay tuned
 
-My discord: `_zied_`
+My discord: `ohzied`
